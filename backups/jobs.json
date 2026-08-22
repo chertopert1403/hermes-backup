@@ -1,0 +1,56 @@
+{
+  "jobs": [
+    {
+      "id": "1bd9ebe21592",
+      "name": "hermes-12h-backup-git",
+      "prompt": "",
+      "skills": [],
+      "skill": null,
+      "model": null,
+      "provider": null,
+      "provider_snapshot": null,
+      "model_snapshot": null,
+      "base_url": null,
+      "script": "backup-hermes-git.sh",
+      "no_agent": true,
+      "monitor_script": null,
+      "monitor_url": null,
+      "monitor_state": null,
+      "context_from": null,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 */12 * * *",
+        "display": "0 */12 * * *"
+      },
+      "schedule_display": "0 */12 * * *",
+      "repeat": {
+        "times": null,
+        "completed": 1
+      },
+      "enabled": true,
+      "state": "scheduled",
+      "paused_at": null,
+      "paused_reason": null,
+      "created_at": "2026-08-22T06:13:56.626020+00:00",
+      "next_run_at": "2026-08-22T12:00:00+00:00",
+      "last_run_at": "2026-08-22T06:14:02.798915+00:00",
+      "last_status": "error",
+      "last_error": "Script exited with code 1\nstdout:\n🔄 Starting Hermes backup: 20260822_061400_UTC\n   Source: /data/.hermes\n   Destination: /data/workspace/hermes-backups/backup_20260822_061400_UTC\n  ✓ memories/\n  ✓ skills/ (SKILL.md files)\n  ✓ config.yaml\n  ✓ SOUL.md\n  ✓ cron/executions.db\n  ✓ cron/jobs.json\n  ✓ scripts/\n  ✓ gateway_state.json\n  ✓ channel_directory.json\n  ✓ kanban.db\n  ✓ provider_models_cache.json\n  ✓ .skills_prompt_snapshot.json\n  ✓ auth.json (secrets redacted)\n  ✓ sessions/ (metadata)\n  ✓ MANIFEST.md\nwarning: You appear to have cloned an empty repository.\nremote: error: GH013: Repository rule violations found for refs/heads/main.        \nremote: \nremote: - GITHUB PUSH PROTECTION        \nremote:   —————————————————————————————————————————        \nremote:     Resolve the following violations before pushing again        \nremote: \nremote:     - Push cannot contain secrets        \nremote: \nremote:             \nremote:      (?) Learn how to resolve a blocked push        \nremote:      https://docs.github.com/code-security/secret-scanning/working-with-secret-scanning-and-push-protection/working-with-push-protection-from-the-command-line#resolving-a-blocked-push        \nremote:             \nremote:      (?) This repository does not have Secret Scanning enabled, but is eligible. Enable Secret Scanning to view and manage detected secrets.        \nremote:      Visit the repository settings page, https://github.com/chertopert1403/hermes-backup/settings/security_analysis        \nremote:             \nremote:             \nremote:       —— GitHub Personal Access Token ——————————————————————        \nremote:        locations:        \nremote:          - commit: ac074fc568d7a956034c2c2d0d0d98c1cb35504a        \nremote:            path: scripts/config.yml:4        \nremote:             \nremote:        (?) To push, remove secret from commit(s) or follow this URL to allow the secret.        \nremote:        https://github.com/chertopert1403/hermes-backup/security/secret-scanning/unblock-secret/3IEqhEv9EcTVyJAx5skHqLl9JyX        \nremote:             \nremote: \nremote: \nTo https://github.com/chertopert1403/hermes-backup.git\n ! [remote rejected] main -> main (push declined due to repository rule violations)\nerror: failed to push some refs to 'https://github.com/chertopert1403/hermes-backup.git'",
+      "last_delivery_error": null,
+      "failure_streak": 1,
+      "deliver": "origin",
+      "origin": {
+        "platform": "telegram",
+        "chat_id": "80124466",
+        "chat_name": "Mohammad Reza ツ Jozvahedi",
+        "thread_id": null,
+        "user_id": "80124466",
+        "scope_id": null
+      },
+      "enabled_toolsets": null,
+      "workdir": null,
+      "fire_claim": null
+    }
+  ],
+  "updated_at": "2026-08-22T06:14:02.799429+00:00"
+}
