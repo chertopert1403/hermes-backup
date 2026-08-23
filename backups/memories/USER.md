@@ -1,1 +1,0 @@
-Communicates in Persian/Farsi; prefers concise technical solutions; wants Hermes backups saved locally (not GitHub due to security restrictions); provides scripts for execution; prefers zip file backups for offline storage
